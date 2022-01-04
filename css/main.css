@@ -1812,11 +1812,27 @@ video::-webkit-media-controls-timeline {
   align-items: flex-start;
   justify-content: center;
 }
+@media (max-width:767px) {
+  .footer {
+    flex-direction: column;
+    padding-top: 100px ;
+    padding-bottom: 100px;
+    height: 100%;
+    text-align: center;
+  }
+}
 .footer .container .infos {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+}
+@media (max-width:767px) {
+  .footer .container .infos {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .footer .container .infos h2 {
   font-size: 2.5rem;
@@ -1889,6 +1905,17 @@ video::-webkit-media-controls-timeline {
   font-size: 0.9rem;
   color: #999;
 }
+@media (max-width:767px) {
+  .footer .container .adress span {
+    font-size: .8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .container .adress span i {
+    margin-bottom: 25px;
+  }
+}
 .footer .container .adress span i {
   margin-right: 15px;
   font-size: 1.2rem;
@@ -1917,6 +1944,10 @@ video::-webkit-media-controls-timeline {
   color: white;
   background-color: #111;
   font-size: 0.9rem;
+}
+@media (max-width:767px) {
+  .footer .container .portfoli {
+  }
 }
 /* footer end */
 /* animation */
